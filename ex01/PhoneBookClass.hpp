@@ -9,12 +9,14 @@ class	PhoneBookClass
 private:
 	ContactClass	_contacts[8];
 	size_t			_index;
+	size_t			_usedCapacity;
 
 public:
 	PhoneBookClass(void);
 	~PhoneBookClass(void);
 
 	void			addContact(ContactClass &contact);
+	size_t			getUsedCapacity(void) const;
 	ContactClass	getContact(size_t const index) const;
 };
 
