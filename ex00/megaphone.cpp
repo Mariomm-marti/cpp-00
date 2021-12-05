@@ -17,10 +17,10 @@ int		main(int argc, char **argv)
 	if (argc == 1)
 	{
 		std::cout << MEGAPHONE_AMBIENT << std::endl;
-		return (0);
+		return 0;
 	}
 	while (*++argv)
 		megaphone_string(*argv);
 	std::cout << std::endl;
-	return (0);
+	return 0;
 }
