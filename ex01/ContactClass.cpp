@@ -1,4 +1,5 @@
 #include "ContactClass.hpp"
+#include <iostream>
 
 ContactClass::ContactClass(void) : firstName("Mario"), lastName("Martin"), nickname("vim"), phone("634768271"), secret("c'est la vim") { }
 
@@ -20,6 +21,27 @@ ContactClass	&ContactClass::operator=(ContactClass const &rhs)
 	phone = rhs.phone;
 	secret = rhs.secret;
 	return *this;
+}
+
+ContactClass	ContactClass::generateContact(void)
+{
+	std::string	firstName;
+	std::string	lastName;
+	std::string	nickname;
+	std::string	phone;
+	std::string	secret;
+
+	std::cout << "Contact name: ";
+	std::cin >> firstName;
+	std::cout << "Contact last name: ";
+	std::cin >> lastName;
+	std::cout << "Contact nickname: ";
+	std::cin >> nickname;
+	std::cout << "Contact phone: ";
+	std::cin >> phone;
+	std::cout << "Contact secret: ";
+	std::cin >> secret;
+	return ContactClass(firstName, lastName, nickname, phone, secret);
 }
 
 std::string		ContactClass::getFirstName(void) const

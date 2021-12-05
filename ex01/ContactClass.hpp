@@ -6,11 +6,11 @@
 class	ContactClass
 {
 private:
-	std::string		firstName;
-	std::string		lastName;
-	std::string		nickname;
-	std::string		phone;
-	std::string		secret;
+	std::string			firstName;
+	std::string			lastName;
+	std::string			nickname;
+	std::string			phone;
+	std::string			secret;
 
 public:
 	ContactClass(void);
@@ -25,11 +25,13 @@ public:
 
 	ContactClass	&operator=(ContactClass const &rhs);
 
-	std::string		getFirstName(void) const;
-	std::string		getLastName(void) const;
-	std::string		getNickname(void) const;
-	std::string		getPhone(void) const;
-	std::string		getSecret(void) const;
+	static ContactClass	generateContact(void);
+
+	std::string			getFirstName(void) const;
+	std::string			getLastName(void) const;
+	std::string			getNickname(void) const;
+	std::string			getPhone(void) const;
+	std::string			getSecret(void) const;
 };
 
 #endif
