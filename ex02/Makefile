@@ -1,7 +1,7 @@
 NAME		= bank
 
-SRCS		= tests.cpp \
-			  Account.cpp
+SRCS		= Account.cpp \
+			  tests.cpp
 OBJS		= $(SRCS:.cpp=.opp)
 
 COMPILER	= c++
