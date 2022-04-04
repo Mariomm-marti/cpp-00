@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include <iomanip>
+#include <limits>
 
 static void		commandAdd(PhoneBookClass &book)
 {
@@ -67,7 +68,6 @@ static void		commandSearch(PhoneBookClass const &book)
 	}
 }
 
-#include <limits>
 int		main(void)
 {
 	PhoneBookClass	book;
